@@ -18,22 +18,18 @@ public class Tabla_Multiplicar {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-        int tabla = 1;
+        
         int multi = 0;
         System.out.println("Ingrese un numero para ver su tabla.");
         System.out.println("Ingrese un numero: ");
         int numero = sc.nextInt();
         System.out.println("<<<<TABLA DEL " + numero +">>>>");
-        while (tabla <= 10){
-            
+        
+        for (int tabla = 1; tabla <= 10; tabla++) {
             multi = tabla * numero;
             System.out.println(numero + " X " + tabla + " = " + multi);
-            
-            tabla++;
         }
-        
-        
-        
+      
     }
     
 }
